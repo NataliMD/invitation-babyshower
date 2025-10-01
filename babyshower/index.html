@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower🍼</title>
+    
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+
+<body class="bg-repeat bg-opacity min-h-screen flex items-center justify-center p-6 text-color-gray-800" style="background-image: linear-gradient(rgba(225, 227, 236, 0.7),rgba(255, 255, 255, 0.8)), url('img/fondonube.jpg');">
+    
+    <div class="bg-no-repeat bg-center p-8 max-w-lg w-full text-center ">
+        <div class="flex justify-between items-center">
+            <img src="img/osoluna-sinfondo.png" alt="osoluna" class="mx-auto w-30 h-30 items-start">
+            <h2 class="text-gray-600 mb-2 font-bold ">
+            <i>Un pedacito de cielo viene en camino...
+            </i>
+            </h2>
+            <img src="img/osoluna-sinfondo.png" alt="osoluna" class="mx-auto w-30 h-30 items-end">
+        </div>
+        
+        <h1 class="text-5xl font-extrabold text-blue-700 mb-4 p-8">
+            ¡Vamos a ser Abuelos!
+        </h1>
+        
+        <p class="text-xl text-gray-700 mb-6 italic">
+            Con mucha alegría, queremos celebrar la dulce espera de nuestro nietito Angelo. Acompañanos en este día tan especial lleno de amor, risas y buenos deseos.
+        </p>
+        <img src="img/osogloboaero-sinfondo.png" alt="globo" class="mx-auto mb-6 w-40 h-40 ">
+        
+        <div class="bg-blue-500/30 box-shadow shadow-lg shadow-blue-500 rounded-lg  mb-8 p-4 hover:transition duration-300 transform hover:scale-105">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">¡Cuenta regresiva!</h3>
+            <div id="countdown" class="flex justify-center space-x-4 text-2xl font-bold text-sky-700">
+                <span id="days">00 Días</span>
+                <span id="hours">00 Horas</span>
+                <span id="minutes">00 Min.</span>
+                <span id="seconds">00 Seg.</span>
+            </div>
+        </div>
+
+        <img src="img/osogloboaero-sinfondo.png" alt="globo" class="mx-auto mb-6 w-40 h-40 ">
+
+        <div class="space-y-5 mb-20 p-10 bg-blue-100/70 rounded-full shadow-lg 
+        hover:transition duration-300 transform hover:scale-105">
+            <div class="flex items-center justify-center text-lg">
+                <span class="text-2xl mr-3">🗓️</span>
+                <p>
+                    <span class="font-semibold block">Fecha:</span> Sábado 08 de Noviembre del 2025
+                </p>
+            </div>
+            
+            <div class="flex items-center justify-center text-lg">
+                <span class="text-2xl mr-3">⏰</span>
+                <p>
+                    <span class="font-semibold block">Hora:</span> 18:30
+                </p>
+            </div>
+
+            <div class="flex items-center justify-center text-lg">
+                <span class="text-2xl mr-3">📍</span>
+                <p>
+                    <span class="font-semibold block">Lugar:</span> Parque Nacional El Palmar 1343, Parques Nacionales II
+                </p>
+            </div>
+        </div>
+
+        <img src="img/osoglobo-sinfondo.png" alt="globo" class="mx-auto mb-6 w-20 h-40 ">
+
+        <div>
+            <h2 class="text-2xl font-semibold text-blue-900 mb-6">¿Como llegar?</h2>
+            <h4 class="text-left font-bold">Colectivos: </h4>
+            <ul class="list-disc list-inside text-left mb-8">
+                <li>3C (entra al barrio)</li>
+                <li>1A, 1B, 5B, 8A, 8B, 8C (dejan en Av. Paraguay en el Damesco frente al Estadio Martearena) </li>
+            </ul>
+            <div class="mt-6 flex justify-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.2743730535763!2d-65.42988118621822!3d-24.81991059704078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc2e23d103e8f%3A0x24e284a947b99d7b!2sParque%20Nacional%20el%20Palmar%201343%2C%20A4400%20Salta!5e0!3m2!1ses!2sar!4v1759360008401!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-lg max-w-2xl w-full mb-20"></iframe>
+            </div>
+
+        </div>
+
+        <div class="flex justify-between items-center space-x-6">
+            <img src="img/osomoño-sinfondo.png" alt="globo" class="mx-auto mb-6 w-30 h-40 ">
+            <a href="https://wa.me/5493875157609?text=Confirmo%20mi%20asistencia%20al%20baby%20shower" class="bg-sky-400 inline-block px-10 py-4 text-white font-bold rounded-full shadow-2xl shadow-blue-400/60 hover:transition duration-300 transform hover:scale-105">
+            Confirmar Asistencia
+            </a>
+        </div>
+    </div>
+
+    <script>
+            // Código JavaScript para el contador de tiempo
+
+        // 🚨 1. ESTABLECE LA FECHA DEL BABY SHOWER AQUÍ (¡AJUSTA ESTO!)
+        const partyDate = new Date('Nov 08, 2025 18:30:00').getTime();
+
+        // 2. Función para actualizar el contador
+        function updateCountdown() {
+        // Obtener la fecha y hora de hoy
+        const now = new Date().getTime();
+
+        // Calcular la diferencia de tiempo entre hoy y la fecha del evento
+        const distance = partyDate - now;
+
+        // Si el contador ya terminó
+        if (distance < 0) {
+            clearInterval(countdownInterval); // Detiene la función
+            document.getElementById("countdown").innerHTML = "¡Es Hoy! ¡Te esperamos!";
+            return;
+        }
+
+        // Cálculos de tiempo para días, horas, minutos y segundos
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Función para añadir un cero si el número es menor a 10
+        const formatTime = (time) => (time < 10 ? "0" + time : time);
+
+        // Mostrar el resultado en los elementos HTML
+        document.getElementById("days").innerHTML = formatTime(days) + " Días";
+        document.getElementById("hours").innerHTML = formatTime(hours) + " Horas";
+        document.getElementById("minutes").innerHTML = formatTime(minutes) + " Min.";
+        document.getElementById("seconds").innerHTML = formatTime(seconds) + " Seg.";
+        }
+
+        // 3. Llamar a la función inmediatamente y luego cada segundo
+        updateCountdown(); 
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+    
+</body>
+</html>
