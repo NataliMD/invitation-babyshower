@@ -19,7 +19,7 @@ yarn-error.log
 # Archivo CSS de salida/compilación. 
 # Esto asume que el archivo generado se llama 'output.css'
 # y está dentro de la carpeta 'src'.
-src/output.css
+#src/output.css
 
 # ----------------------------------------
 # 3. Configuraciones y archivos del SO
