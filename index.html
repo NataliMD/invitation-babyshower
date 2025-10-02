@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Shower🍼</title>
-    <link rel="icon" type="image/png" href="./babyshower/img/favicon.ico">
+    <link rel="icon" type="image/png" href="./babyshower/img/osoaero-sinfondo.png">
+
+    <!-- metas tags para redes sosciales-->
+    <meta name="description" content="Invitación al Baby Shower de Angelo - 8 de Noviembre 2025">
+    <meta property="og:title" content="Baby Shower Angelo - ¡Vamos a ser Abuelos!">
+    <meta property="og:description" content="Celebremos juntos la dulce espera de nuestro nietito Angelo">
+    <meta property="og:image" content="./babyshower/img/osogloboaero-sinfondo.png">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="./src/output.css" rel="stylesheet">
     <link href="./src/input.css" rel="stylesheet">
@@ -14,142 +22,152 @@
 
 </head>
 
+<body class="min-h-screen flex flex-col bg-repeat" style="background-image: linear-gradient(rgba(225, 227, 236, 0.7),rgba(202, 200, 200, 0.8)), url('./babyshower/img/fondonube.jpg');">
 
-<body class="bg-repeat bg-opacity min-h-screen flex items-center justify-center p-6 text-color-gray-800" style="background-image: linear-gradient(rgba(225, 227, 236, 0.7),rgba(202, 200, 200, 0.8)), url('./babyshower/img/fondonube.jpg');">
-
-    <div class="bg-no-repeat bg-center p-8 max-w-lg w-full text-center ">
-        <div class="flex justify-between items-center w-full mx-0 px-0">
-            <img id="osoluna" src="./babyshower/img/osoluna-sinfondo.png" alt="osoluna" class="w-30 h-30 items-start imagen-balanceo-y">
-            <h2 class="text-gray-600 mb-2 font-bold " >
-            <i>Un pedacito de cielo viene en camino...
-            </i>
-            </h2>
-            <img id="osoluna" src="./babyshower/img/osoluna-sinfondo.png" alt="osoluna" class="w-30 h-30 items-end imagen-balanceo-y">
-        </div>
-        
-        <h1 class="text-5xl font-extrabold text-blue-700 mb-4 p-8 animacion-latido" >
-            ¡Vamos a ser Abuelos!
-        </h1>
-        
-        <p class="text-xl text-gray-700 mb-6 italic">
-            Con mucha alegría, queremos celebrar la dulce espera de nuestro nietito Angelo. Acompañanos en este día tan especial lleno de amor, risas y buenos deseos.
-        </p>
-        <img id="osogloboaero" src="./babyshower/img/osogloboaero-sinfondo.png" alt="globo" class="mx-auto mb-6 w-40 h-40 imagen-balanceo">
-        
-        <div class="bg-blue-500/30 box-shadow shadow-lg shadow-blue-500 rounded-lg  mb-8 p-4 animacion-latido hover:transition duration-300 transform hover:scale-105">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">¡Cuenta regresiva!</h3>
-            <div id="countdown" class="flex justify-center space-x-4 text-2xl font-bold text-sky-700">
-                <span id="days">00 Días</span>
-                <span id="hours">00 Horas</span>
-                <span id="minutes">00 Min.</span>
-                <span id="seconds">00 Seg.</span>
-            </div>
-        </div>
-
-        <img id="osogloboaero" src="./babyshower/img/osogloboaero-sinfondo.png" alt="globo" class="mx-auto mb-6 w-40 h-40 imagen-balanceo ">
-
-        <div class="space-y-5 mb-20 p-10 bg-blue-100/70 rounded-full shadow-lg 
-        hover:transition duration-300 transform hover:scale-105">
-            <div class="flex items-center justify-center text-lg">
-                <span class="text-2xl mr-3">🗓️</span>
-                <p>
-                    <span class="font-semibold block">Fecha:</span> Sábado 08 de Noviembre del 2025
-                </p>
+    <!-- Contenido principal -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="bg-transparent p-8 max-w-lg w-full text-center">
+            
+            <!-- Header con osos -->
+            <div class="flex flex-col md:flex-row md:justify-between items-center w-full mb-6 gap-4">
+                <img src="./babyshower/img/osoluna-sinfondo.png" alt="oso con luna izquierda" class="w-20 h-20 imagen-balanceo-y">
+                <h2 class="text-sm md:text-base text-gray-600 font-bold italic px-4 text-center">
+                    Un pedacito de cielo viene en camino...
+                </h2>
+                <img src="./babyshower/img/osoluna-sinfondo.png" alt="oso con luna derecha" class="w-20 h-20 imagen-balanceo-y">
             </div>
             
-            <div class="flex items-center justify-center text-lg">
-                <span class="text-2xl mr-3">⏰</span>
-                <p>
-                    <span class="font-semibold block">Hora:</span> 18:30
-                </p>
+            <!-- Título principal -->
+            <h1 class="text-2xl md:text-5xl font-extrabold text-blue-700 mb-4 md:py-8">
+                ¡Vamos a ser Abuelos!
+            </h1>
+            
+            <!-- Descripción -->
+            <p class="text-base md:text-xl text-gray-700 mb-6 italic">
+                Con mucha alegría, queremos celebrar la dulce espera de nuestro nietito Angelo. Acompáñanos en este día tan especial lleno de amor, risas y buenos deseos.
+            </p>
+            
+            <img src="./babyshower/img/osogloboaero-sinfondo.png" alt="oso con globo aerostático" class="mx-auto my-8 md:my-10 mb-6 w-40 h-40 imagen-balanceo">
+            
+            <!-- Cuenta regresiva -->
+            <div class="bg-blue-500/30 shadow-lg shadow-blue-500/50 rounded-lg mb-8 p-4 animacion-latido hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">¡Cuenta regresiva!</h3>
+                <div id="countdown" class="flex flex-wrap justify-center gap-2 md:gap-4 text-base md:text-2xl font-bold text-sky-700">
+                    <span id="days">00 Días</span>
+                    <span id="hours">00 Horas</span>
+                    <span id="minutes">00 Min.</span>
+                    <span id="seconds">00 Seg.</span>
+                </div>
             </div>
 
-            <div class="flex items-center justify-center text-lg">
-                <span class="text-2xl mr-3">📍</span>
-                <p>
-                    <span class="font-semibold block">Lugar:</span> Parque Nacional El Palmar 1343, Parques Nacionales II
-                </p>
+            <img src="./babyshower/img/osogloboaero-sinfondo.png" alt="oso con globo" class="mx-auto my-8 md:my-10 mb-6 w-40 h-40 imagen-balanceo">
+
+            <!-- Detalles del evento -->
+            <div class="space-y-5 mb-10 p-6 md:p-10  bg-blue-100/70 rounded-3xl md:rounded-full shadow-lg hover:scale-105 transition duration-300">
+                <div class="flex items-center justify-center text-sm md:text-lg">
+                    <span class="text-2xl mr-3">🗓️</span>
+                    <p>
+                        <span class="font-semibold block">Fecha:</span> Sábado 08 de Noviembre del 2025
+                    </p>
+                </div>
+                
+                <div class="flex items-center justify-center text-lg">
+                    <span class="text-2xl mr-3">⏰</span>
+                    <p>
+                        <span class="font-semibold block">Hora:</span> 18:30
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-center text-lg">
+                    <span class="text-2xl mr-3">📍</span>
+                    <p>
+                        <span class="font-semibold block">Lugar:</span> Parque Nacional El Palmar 1343, Parques Nacionales II
+                    </p>
+                </div>
+            </div>
+
+            <img src="./babyshower/img/osoglobo-sinfondo.png" alt="oso con globo" class="mx-auto my-8 md:my-10 mb-6 w-20 h-40 imagen-balanceo-y">
+
+            <!-- Cómo llegar -->
+            <div class="mb-10">
+                <h2 class="text-2xl font-semibold text-blue-900 mb-6">¿Cómo llegar?</h2>
+                <h4 class="text-left font-bold">Colectivos:</h4>
+                <ul class="list-disc list-inside text-left mb-8">
+                    <li>3C (entra al barrio)</li>
+                    <li>1A, 1B, 5B, 8A, 8B, 8C (dejan en Av. Paraguay en el Damesco frente al Estadio Martearena)</li>
+                </ul>
+                <div class="mt-6">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.2743730535763!2d-65.42988118621822!3d-24.81991059704078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc2e23d103e8f%3A0x24e284a947b99d7b!2sParque%20Nacional%20el%20Palmar%201343%2C%20A4400%20Salta!5e0!3m2!1ses!2sar!4v1759360008401!5m2!1ses!2sar" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade" 
+                        class="md:h-[450px] rounded-xl shadow-lg w-full mb-8">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Botón de confirmación -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 ">
+                <img src="./babyshower/img/osomoño-sinfondo.png" alt="oso con moño" class="w-20 h-30  imagen-balanceo">
+                <a href="https://wa.me/5493875157609?text=Confirmo%20mi%20asistencia%20al%20baby%20shower" 
+                class="bg-sky-400 inline-block px-10 md:px-12 py-4 md:py-4 text-sm md:text-base text-white font-bold rounded-full shadow-2xl shadow-blue-400/60 animacion-latido hover:scale-105 transition duration-300">
+                    Confirmar Asistencia
+                </a>
             </div>
         </div>
+    </main>
 
-        <img src="./babyshower/img/osoglobo-sinfondo.png" alt="globo" class="mx-auto mb-6 w-20 h-40 imagen-balanceo-y">
-
-        <div>
-            <h2 class="text-2xl font-semibold text-blue-900 mb-6">¿Como llegar?</h2>
-            <h4 class="text-left font-bold">Colectivos: </h4>
-            <ul class="list-disc list-inside text-left mb-8">
-                <li>3C (entra al barrio)</li>
-                <li>1A, 1B, 5B, 8A, 8B, 8C (dejan en Av. Paraguay en el Damesco frente al Estadio Martearena) </li>
-            </ul>
-            <div class="mt-6 flex justify-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.2743730535763!2d-65.42988118621822!3d-24.81991059704078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc2e23d103e8f%3A0x24e284a947b99d7b!2sParque%20Nacional%20el%20Palmar%201343%2C%20A4400%20Salta!5e0!3m2!1ses!2sar!4v1759360008401!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-xl shadow-lg max-w-2xl w-full mb-20"></iframe>
-            </div>
-
-        </div>
-
-        <div class="flex justify-between items-center space-x-6">
-            <img id="osomono" src="./babyshower/img/osomoño-sinfondo.png" alt="globo" class="mx-auto mb-6 w-20 h-30 imagen-balanceo ">
-            <a id="btn" href="https://wa.me/5493875157609?text=Confirmo%20mi%20asistencia%20al%20baby%20shower" class="bg-sky-400 inline-block px-10 py-4 text-white font-bold rounded-full shadow-2xl shadow-blue-400/60 animacion-latido hover:transition duration-300 transform hover:scale-105">
-            Confirmar Asistencia
-            </a>
-        </div>
-    </div>
-
-
-    <script>
-        // Código JavaScript para el contador de tiempo
-
-        // 🚨 1. ESTABLECE LA FECHA DEL BABY SHOWER AQUÍ (¡AJUSTA ESTO!)
-        const partyDate = new Date('Nov 08, 2025 18:30:00').getTime();
-
-        // 2. Función para actualizar el contador
-        function updateCountdown() {
-        // Obtener la fecha y hora de hoy
-        const now = new Date().getTime();
-
-        // Calcular la diferencia de tiempo entre hoy y la fecha del evento
-        const distance = partyDate - now;
-
-        // Si el contador ya terminó
-        if (distance < 0) {
-            clearInterval(countdownInterval); // Detiene la función
-            document.getElementById("countdown").innerHTML = "¡Es Hoy! ¡Te esperamos!";
-            return;
-        }
-
-        // Cálculos de tiempo para días, horas, minutos y segundos
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Función para añadir un cero si el número es menor a 10
-        const formatTime = (time) => (time < 10 ? "0" + time : time);
-
-        // Mostrar el resultado en los elementos HTML
-        document.getElementById("days").innerHTML = formatTime(days) + " Días";
-        document.getElementById("hours").innerHTML = formatTime(hours) + " Horas";
-        document.getElementById("minutes").innerHTML = formatTime(minutes) + " Min.";
-        document.getElementById("seconds").innerHTML = formatTime(seconds) + " Seg.";
-        }
-
-        // 3. Llamar a la función inmediatamente y luego cada segundo
-        updateCountdown(); 
-        const countdownInterval = setInterval(updateCountdown, 1000);
-
-    </script>
-    
-    <footer class="bg-pink-100 text-gray-600 p-4 text-center mt-10">
+    <!-- Footer -->
+    <footer class="bg-blue-50 text-blue-600 p-6 text-center border-t border-blue-200 w-full">
         <p class="text-xs">
             © 2025 Invitación Baby Shower
             <span class="mx-2">|</span> 
             Diseñado y Desarrollado por 
-            <a href="natali.m.delgado@gmail.com" 
+            <a href="mailto:natali.m.delgado@gmail.com" 
             target="_blank" 
-            class="text-pink-500 hover:text-pink-700 transition duration-200 font-medium">
+            class="text-blue-500 hover:text-blue-700 transition duration-200 font-medium">
                 Natali Mariel Delgado
             </a>
         </p>
     </footer>
+
+    <script>
+    /**
+     * Contador regresivo para el Baby Shower
+     * Actualiza cada segundo hasta la fecha del evento
+     */
+        // Fecha del baby shower
+        const partyDate = new Date('2025-11-08T18:30:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = partyDate - now;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown").innerHTML = "¡Es Hoy! ¡Te esperamos!";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const formatTime = (time) => (time < 10 ? "0" + time : time);
+
+            document.getElementById("days").innerHTML = formatTime(days) + " Días";
+            document.getElementById("hours").innerHTML = formatTime(hours) + " Horas";
+            document.getElementById("minutes").innerHTML = formatTime(minutes) + " Min.";
+            document.getElementById("seconds").innerHTML = formatTime(seconds) + " Seg.";
+        }
+
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
