@@ -1,1 +1,62 @@
 @import "tailwindcss";
+
+/* 1. Define la animación de balanceo (Keyframes) */
+@keyframes balanceo {
+    0% {
+    /* Posición inicial (ligeramente a la izquierda) */
+    transform: translateX(-15px);
+    }
+    50% {
+    /* Posición central (sin desplazamiento) */
+    transform: translateX(0);
+    }
+    100% {
+    /* Posición final (ligeramente a la derecha) */
+    transform: translateX(15px);
+    }
+    }
+
+    /* 2. Aplica la animación a la clase de la imagen */
+    .imagen-balanceo {
+    /* La imagen debe ser un bloque o inline-block para animarse */
+    display: block; 
+
+    /* Aplica la animación: 
+        - balanceo: nombre de la animación
+        - 4s: duración de un ciclo (4 segundos)
+        - ease-in-out: la velocidad es suave al inicio y al final
+        - infinite: se repite sin parar
+        - alternate: va de 0% a 100% y luego de 100% a 0%
+    */
+    animation: balanceo 5s ease-in-out infinite alternate;
+    }
+
+@keyframes balanceo-y {
+    0% {
+    /* Posición inicial (ligeramente a la izquierda) */
+    transform: translateY(-15px);
+    }
+    50% {
+    /* Posición central (sin desplazamiento) */
+    transform: translateY(0);
+    }
+    100% {
+    /* Posición final (ligeramente a la derecha) */
+    transform: translateY(15px);
+    }
+    }
+
+    /* 2. Aplica la animación a la clase de la imagen */
+    .imagen-balanceo-y {
+    /* La imagen debe ser un bloque o inline-block para animarse */
+    display: block; 
+
+    /* Aplica la animación: 
+        - balanceo: nombre de la animación
+        - 4s: duración de un ciclo (4 segundos)
+        - ease-in-out: la velocidad es suave al inicio y al final
+        - infinite: se repite sin parar
+        - alternate: va de 0% a 100% y luego de 100% a 0%
+    */
+    animation: balanceo-y 5s ease-in-out infinite alternate;
+    }
