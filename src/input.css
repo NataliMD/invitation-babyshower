@@ -60,3 +60,33 @@
     */
     animation: balanceo-y 5s ease-in-out infinite alternate;
     }
+
+    /* Define la animación para el efecto de latido */
+    @keyframes latido-personalizado {
+    0% {
+    /* Estado inicial: tamaño normal y opacidad completa */
+    transform: scale(1);
+    opacity: 1;
+    }
+    50% {
+    /* Punto medio (el "latido"): ligeramente más grande y más transparente */
+    transform: scale(1.05); /* Se agranda un 5% */
+    opacity: 0.7;           /* Se vuelve más transparente */
+    }
+    100% {
+    /* Vuelve al estado inicial */
+    transform: scale(1);
+    opacity: 1;
+    }
+    }
+
+    /* 2. Clase para aplicar la animación */
+    .animacion-latido {
+    /* Aplica la animación: 
+        - latido-personalizado: nombre de la animación
+        - 1.5s: duración de un ciclo (más lento para un corazón)
+        - ease-in-out: velocidad suave
+        - infinite: se repite sin parar
+    */
+    animation: latido-personalizado 1.5s ease-in-out infinite;
+    }
