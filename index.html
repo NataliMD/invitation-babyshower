@@ -31,20 +31,20 @@
             <!-- Header con osos -->
             <div class="flex flex-col md:flex-row md:justify-between items-center w-full mb-6 gap-4">
                 <img src="./babyshower/img/osoluna-sinfondo.png" alt="oso con luna izquierda" class="w-20 h-20 imagen-balanceo-y">
-                <h2 class="text-sm md:text-base text-gray-600 font-bold italic px-4 text-center">
+                <h2 class="text-lg md:text-base text-gray-600 font-bold italic px-4 text-center">
                     Un pedacito de cielo viene en camino...
                 </h2>
                 <img src="./babyshower/img/osoluna-sinfondo.png" alt="oso con luna derecha" class="w-20 h-20 imagen-balanceo-y">
             </div>
             
             <!-- Título principal -->
-            <h1 class="text-2xl md:text-5xl font-extrabold text-blue-700 mb-4 md:py-8">
-                ¡Vamos a ser Abuelos!
+            <h1 class="text-2xl md:text-3xl font-extrabold text-blue-700 mb-4 md:py-8">
+                ¡Celebremos esta gran bendición!
             </h1>
             
             <!-- Descripción -->
             <p class="text-base md:text-xl text-gray-700 mb-6 italic">
-                Con mucha alegría, queremos celebrar la dulce espera de nuestro nietito Angelo. Acompáñanos en este día tan especial lleno de amor, risas y buenos deseos.
+                Queremos compartir la alegría de la dulce espera de Angelo contigo. Acompáñanos a celebrar este hermoso baby shower.
             </p>
             
             <img src="./babyshower/img/osogloboaero-sinfondo.png" alt="oso con globo aerostático" class="mx-auto my-8 md:my-10 mb-6 w-40 h-40 imagen-balanceo">
@@ -53,17 +53,32 @@
             <div class="bg-blue-500/30 shadow-lg shadow-blue-500/50 rounded-lg mb-8 p-4 animacion-latido hover:scale-105 transition duration-300">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">¡Cuenta regresiva!</h3>
                 <div id="countdown" class="flex flex-wrap justify-center gap-2 md:gap-4 text-base md:text-2xl font-bold text-sky-700">
-                    <span id="days">00 Días</span>
-                    <span id="hours">00 Horas</span>
-                    <span id="minutes">00 Min.</span>
-                    <span id="seconds">00 Seg.</span>
+                    <div class="flex flex-col items-center mx-2">
+                        <span> Días</span>
+                        <span id="days">00 </span>
+                        
+                    </div>
+                    <div class="flex flex-col items-center mx-2">
+                        <span> Horas</span>
+                        <span id="hours">00  </span>
+                        
+                    </div>
+                    <div class="flex flex-col items-center mx-2">
+                        <span>Min</span>
+                        <span id="minutes">00 </span>
+                    </div>
+                    <div class="flex flex-col items-center mx-2">
+                        <span>Seg</span>
+                        <span id="seconds">00</span>
+                    </div>
+
                 </div>
             </div>
 
             <img src="./babyshower/img/osogloboaero-sinfondo.png" alt="oso con globo" class="mx-auto my-8 md:my-10 mb-6 w-40 h-40 imagen-balanceo">
 
             <!-- Detalles del evento -->
-            <div class="space-y-5 mb-10 p-6 md:p-10  bg-blue-100/70 rounded-3xl md:rounded-full shadow-lg hover:scale-105 transition duration-300">
+            <div class="space-y-5 mb-10 p-6 md:p-10  bg-blue-300/60 rounded-full md:rounded-full shadow-lg hover:scale-105 transition duration-300">
                 <div class="flex items-center justify-center text-sm md:text-lg">
                     <span class="text-2xl mr-3">🗓️</span>
                     <p>
@@ -111,8 +126,8 @@
             </div>
 
             <!-- Botón de confirmación -->
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 ">
-                <img src="./babyshower/img/osomoño-sinfondo.png" alt="oso con moño" class="w-20 h-30  imagen-balanceo">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 ">
+                <img src="./babyshower/img/osomoño-sinfondo.png" alt="oso con moño" class="w-20 h-30 p-0 animacion-latido">
                 <a href="https://wa.me/5493875157609?text=Confirmo%20mi%20asistencia%20al%20baby%20shower" 
                 class="bg-sky-400 inline-block px-10 md:px-8 py-4 md:py-4 text-sm md:text-base text-white font-bold rounded-full shadow-2xl shadow-blue-400/60 animacion-latido hover:scale-105 transition duration-300">
                     Confirmar Asistencia
@@ -122,7 +137,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue-50 text-blue-600 p-6 text-center border-t border-blue-200 w-full">
+    <footer class="bg-blue-200/50 text-blue-600 p-6 text-center border-t border-blue-200 w-full">
         <p class="text-xs">
             © 2025 Invitación Baby Shower
             <span class="mx-2">|</span> 
@@ -160,10 +175,10 @@
 
             const formatTime = (time) => (time < 10 ? "0" + time : time);
 
-            document.getElementById("days").innerHTML = formatTime(days) + " Días";
-            document.getElementById("hours").innerHTML = formatTime(hours) + " Horas";
-            document.getElementById("minutes").innerHTML = formatTime(minutes) + " Min.";
-            document.getElementById("seconds").innerHTML = formatTime(seconds) + " Seg.";
+            document.getElementById("days").innerHTML = formatTime(days);
+            document.getElementById("hours").innerHTML = formatTime(hours);
+            document.getElementById("minutes").innerHTML = formatTime(minutes);
+            document.getElementById("seconds").innerHTML = formatTime(seconds) ;
         }
 
         updateCountdown();
