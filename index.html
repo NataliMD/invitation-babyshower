@@ -172,10 +172,12 @@
 
             let playMusic = confirm("¿Deseás activar la musica de fondo?");
 
+            audio.play();
             if(playMusic){
-                audio.play().catch(error => console.log("Error al reproducir el audio:", error));
+                audio.muted = false;
             } else {
                 audio.muted = true;
+                muteBtn.textContent = "🔇";
             }
             
             
@@ -184,7 +186,6 @@
             muteBtn.addEventListener("click",()=>{
                 if(audio.muted){
                     audio.muted = false;
-                    audio.play();
                     muteBtn.textContent = "🔊";
                 } else {
                     audio.muted = true;
