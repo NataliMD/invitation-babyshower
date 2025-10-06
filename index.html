@@ -14,15 +14,24 @@
     <meta property="og:type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link href="./src/output.css" rel="stylesheet">
-    <link href="./src/input.css" rel="stylesheet">
-
-    
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/input.css" rel="stylesheet">
 
 
 </head>
 
 <body class="min-h-screen flex flex-col bg-repeat" style="background-image: linear-gradient(rgba(225, 227, 236, 0.7),rgba(202, 200, 200, 0.8)), url('./babyshower/img/fondonube.jpg');">
+
+    <!-- Musica -->
+    <audio id="bg-music" loop>
+        <source src="./babyshower/music/cute-baby-funny-happy-children-music-290087.mp3" type="audio/mpeg"> Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- boton flotante para musica -->
+    <button id="muteBtn" class="fixed bottom-4 rigth-4 bg-blue-500 text-white px-4 py-2 rounded-b-full shadow-lg ml-1.5 hover:bg-blue-600 transition"> 🔊
+
+    </button>
+
 
     <!-- Contenido principal -->
     <main class="flex-grow flex items-center justify-center p-6">
@@ -153,6 +162,38 @@
     </footer>
 
     <script>
+        /*para musica*/
+        window.onload = function(){
+            //crea audio
+            const audio = document.getElementById("bg-music");
+            const muteBtn =document.getElementById("muteBtn");
+            audio.volume = 0.5; //vol inicial
+
+
+            let playMusic = confirm("¿Deseás activar la musica de fondo?");
+
+            if(playMusic){
+                audio.play().catch(error => console.log("Error al reproducir el audio:", error));
+            } else {
+                audio.muted = true;
+            }
+            
+            
+
+            //control mute
+            muteBtn.addEventListener("click",()=>{
+                if(audio.muted){
+                    audio.muted = false;
+                    audio.play();
+                    muteBtn.textContent = "🔊";
+                } else {
+                    audio.muted = true;
+                    muteBtn.textContent = "🔇";
+                }
+            })
+        }
+    
+
     /**
      * Contador regresivo para el Baby Shower
      * Actualiza cada segundo hasta la fecha del evento
@@ -185,6 +226,10 @@
 
         updateCountdown();
         const countdownInterval = setInterval(updateCountdown, 1000);
+
+
+
     </script>
+
 </body>
 </html>
