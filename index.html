@@ -172,8 +172,8 @@
 
             let playMusic = confirm("¿Deseás activar la musica de fondo?");
 
-            audio.play();
             if(playMusic){
+                audio.play();
                 audio.muted = false;
             } else {
                 audio.muted = true;
@@ -185,6 +185,7 @@
             //control mute
             muteBtn.addEventListener("click",()=>{
                 if(audio.muted){
+                    audio.play();
                     audio.muted = false;
                     muteBtn.textContent = "🔊";
                 } else {
