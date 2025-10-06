@@ -28,7 +28,7 @@
     </audio>
 
     <!-- boton flotante para musica -->
-    <button id="muteBtn" class="fixed bottom-4 rigth-4 bg-blue-500 text-white px-4 py-2 rounded-b-full shadow-lg ml-1.5 hover:bg-blue-600 transition"> 🔊
+    <button id="muteBtn" class="fixed bottom-4 rigth-4 bg-blue-500 text-white px-4 py-2 rounded-b-full shadow-lg ml-1.5 hover:bg-blue-600 transition"> 🔇
 
     </button>
 
@@ -163,37 +163,35 @@
 
     <script>
         /*para musica*/
-        window.onload = function(){
-            //crea audio
-            const audio = document.getElementById("bg-music");
-            const muteBtn =document.getElementById("muteBtn");
-            audio.volume = 0.5; //vol inicial
+        const audio = document.getElementById("bg-music");
+        const muteBtn =document.getElementById("muteBtn");
+        audio.volume = 0.5; //vol inicial
+        audio.muted = true; 
 
 
-            let playMusic = confirm("¿Deseás activar la musica de fondo?");
+        // let playMusic = confirm("¿Deseás activar la musica de fondo?");
 
-            if(playMusic){
+        // if(playMusic){
+        //     audio.play();
+        //     audio.muted = false;
+        // } else {
+        //     audio.muted = true;
+        //     muteBtn.textContent = "🔇";
+        // }
+        
+        
+
+        //control mute
+        muteBtn.addEventListener("click",()=>{
+            if(audio.muted){
                 audio.play();
                 audio.muted = false;
+                muteBtn.textContent = "🔊";
             } else {
                 audio.muted = true;
                 muteBtn.textContent = "🔇";
             }
-            
-            
-
-            //control mute
-            muteBtn.addEventListener("click",()=>{
-                if(audio.muted){
-                    audio.play();
-                    audio.muted = false;
-                    muteBtn.textContent = "🔊";
-                } else {
-                    audio.muted = true;
-                    muteBtn.textContent = "🔇";
-                }
-            })
-        }
+        })
     
 
     /**
