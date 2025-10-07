@@ -69,8 +69,8 @@
             <img src="./babyshower/img/osogloboaero-sinfondo.png" alt="oso con globo aerostático" class="mx-auto my-8 md:my-10 mb-6 w-40 h-40 imagen-balanceo">
             
             <!-- Cuenta regresiva -->
-            <div class="bg-blue-500/30 shadow-lg shadow-blue-500/50 rounded-lg mb-8 p-4 animacion-latido hover:scale-105 transition duration-300">
-                <h3 class="text-xl font-semibold text-gray-800 mb-2">¡Cuenta regresiva!</h3>
+            <div id="countdownContainer" class="bg-blue-500/30 shadow-lg shadow-blue-500/50 rounded-lg mb-8 p-4 animacion-latido hover:scale-105 transition duration-300">
+                <h3 id="countdownTitle" class="text-xl font-semibold text-gray-800 mb-2">¡Cuenta regresiva!</h3>
                 <div id="countdown" class="flex flex-wrap justify-center gap-2 md:gap-4 text-2xl md:text-xl font-bold text-sky-700">
                     <div class="flex flex-col items-center mx-2">
                         <span> Días</span>
@@ -170,6 +170,9 @@
             </a>
         </p>
     </footer>
+
+    <!-- Confeti script en tu HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
     <script src="src/main.js"></script>
 
